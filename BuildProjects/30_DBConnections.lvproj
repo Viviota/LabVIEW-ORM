@@ -40,6 +40,7 @@
 				<Item Name="System.Text.Json.dll" Type="Document" URL="../../libraries/npgsql/System.Text.Json.dll"/>
 				<Item Name="System.Threading.Channels.dll" Type="Document" URL="../../libraries/npgsql/System.Threading.Channels.dll"/>
 				<Item Name="System.Threading.Tasks.Extensions.dll" Type="Document" URL="../../libraries/npgsql/System.Threading.Tasks.Extensions.dll"/>
+				<Item Name="System.IO.Pipelines.dll" Type="Document" URL="../../libraries/npgsql/System.IO.Pipelines.dll"/>
 			</Item>
 			<Item Name="sqlite" Type="Folder">
 				<Item Name="SQLite.Interop.dll" Type="Document" URL="../../libraries/sqlite/SQLite.Interop.dll"/>
@@ -120,26 +121,26 @@
 				<Property Name="Bld_buildSpecName" Type="Str">ORM_DBC_Sqlite_x32</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x32/shared</Property>
+				<Property Name="Bld_localDestDir" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x32</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{D6EE5AA9-8E18-437A-A7AD-B19BC7656270}</Property>
 				<Property Name="Bld_version.build" Type="Int">18</Property>
 				<Property Name="Bld_version.major" Type="Int">2</Property>
 				<Property Name="Bld_version.minor" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">ORM_DBC_Sqlite.lvlibp</Property>
-				<Property Name="Destination[0].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x32/shared/ORM_DBC_Sqlite.lvlibp</Property>
+				<Property Name="Destination[0].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x32/ORM_DBC_Sqlite.lvlibp</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x32/shared</Property>
+				<Property Name="Destination[1].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x32</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[2].destName" Type="Str">data_orm</Property>
-				<Property Name="Destination[2].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x32/shared/data_orm</Property>
+				<Property Name="Destination[2].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x32/_NET</Property>
 				<Property Name="Destination[2].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{97B37B97-E1AC-476B-9FD3-36595E8055AA}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{4DAA8AFD-174B-4942-BCEF-D28671C48CB1}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/ORM_DBC_Sqlite.lvlib</Property>
@@ -249,11 +250,11 @@
 				<Property Name="Destination[1].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x32/shared</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[2].destName" Type="Str">data_orm</Property>
-				<Property Name="Destination[2].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x32/shared/data_orm</Property>
+				<Property Name="Destination[2].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x32/shared/_NET</Property>
 				<Property Name="Destination[2].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{97B37B97-E1AC-476B-9FD3-36595E8055AA}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{4DAA8AFD-174B-4942-BCEF-D28671C48CB1}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/ORM_DBC_Sqlite.lvlib</Property>
@@ -316,7 +317,7 @@
 				<Property Name="Destination[2].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{97B37B97-E1AC-476B-9FD3-36595E8055AA}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{4DAA8AFD-174B-4942-BCEF-D28671C48CB1}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/ORM_DBC_Sqlite.lvlib</Property>
@@ -376,11 +377,11 @@
 				<Property Name="Destination[1].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x32/shared</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[2].destName" Type="Str">data_orm</Property>
-				<Property Name="Destination[2].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x32/shared/data_orm</Property>
+				<Property Name="Destination[2].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x32/shared/_NET</Property>
 				<Property Name="Destination[2].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{97B37B97-E1AC-476B-9FD3-36595E8055AA}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{4DAA8AFD-174B-4942-BCEF-D28671C48CB1}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/ORM_DBC_Sqlite.lvlib</Property>
@@ -471,11 +472,11 @@
 				<Property Name="Destination[1].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x32/shared</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[2].destName" Type="Str">data_orm</Property>
-				<Property Name="Destination[2].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x32/shared/data_orm</Property>
+				<Property Name="Destination[2].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x32/shared/_NET</Property>
 				<Property Name="Destination[2].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{97B37B97-E1AC-476B-9FD3-36595E8055AA}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{4DAA8AFD-174B-4942-BCEF-D28671C48CB1}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/ORM_DBC_Sqlite.lvlib</Property>
@@ -534,6 +535,9 @@
 				<Property Name="Source[25].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[25].itemID" Type="Ref">/My Computer/data/postgresql/System.Threading.Tasks.Extensions.dll</Property>
 				<Property Name="Source[25].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[26].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[26].itemID" Type="Ref">/My Computer/data/postgresql/System.IO.Pipelines.dll</Property>
+				<Property Name="Source[26].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[3].itemID" Type="Ref">/My Computer/data/kdb/kdbplib.dll</Property>
 				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
@@ -560,7 +564,7 @@
 				<Property Name="Source[9].preventRename" Type="Bool">true</Property>
 				<Property Name="Source[9].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[9].type" Type="Str">Library</Property>
-				<Property Name="SourceCount" Type="Int">26</Property>
+				<Property Name="SourceCount" Type="Int">27</Property>
 				<Property Name="TgtF_companyName" Type="Str">Viviota</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">ORM_DBC_Npgsql</Property>
 				<Property Name="TgtF_internalName" Type="Str">ORM_DBC_Npgsql</Property>
@@ -594,65 +598,57 @@
 				<Property Name="Destination[2].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{EBA26D26-1C41-4613-B072-B82AF63806CF}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{4DAA8AFD-174B-4942-BCEF-D28671C48CB1}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/ORM_DBC_Sqlite.lvlib</Property>
 				<Property Name="Source[1].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[1].type" Type="Str">Library</Property>
 				<Property Name="Source[10].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[10].itemID" Type="Ref">/My Computer/ORM_DBC_MySql.lvlib</Property>
-				<Property Name="Source[10].Library.allowMissingMembers" Type="Bool">true</Property>
-				<Property Name="Source[10].type" Type="Str">Library</Property>
+				<Property Name="Source[10].itemID" Type="Ref">/My Computer/data/postgresql/app.config</Property>
 				<Property Name="Source[11].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[11].itemID" Type="Ref">/My Computer/ORM_DBC_Npgsql.lvlib</Property>
-				<Property Name="Source[11].Library.allowMissingMembers" Type="Bool">true</Property>
-				<Property Name="Source[11].type" Type="Str">Library</Property>
+				<Property Name="Source[11].itemID" Type="Ref">/My Computer/data/postgresql/Microsoft.Bcl.AsyncInterfaces.dll</Property>
 				<Property Name="Source[12].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[12].itemID" Type="Ref">/My Computer/data/postgresql/app.config</Property>
+				<Property Name="Source[12].itemID" Type="Ref">/My Computer/data/postgresql/Microsoft.Bcl.HashCode.dll</Property>
 				<Property Name="Source[13].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[13].itemID" Type="Ref">/My Computer/data/postgresql/Microsoft.Bcl.AsyncInterfaces.dll</Property>
+				<Property Name="Source[13].itemID" Type="Ref">/My Computer/data/postgresql/Microsoft.Extensions.DependencyInjection.Abstractions.dll</Property>
 				<Property Name="Source[14].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[14].itemID" Type="Ref">/My Computer/data/postgresql/Microsoft.Bcl.HashCode.dll</Property>
+				<Property Name="Source[14].itemID" Type="Ref">/My Computer/data/postgresql/Microsoft.Extensions.Logging.Abstractions.dll</Property>
 				<Property Name="Source[15].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[15].itemID" Type="Ref">/My Computer/data/postgresql/Microsoft.Extensions.DependencyInjection.Abstractions.dll</Property>
+				<Property Name="Source[15].itemID" Type="Ref">/My Computer/data/postgresql/Npgsql.dll</Property>
 				<Property Name="Source[16].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[16].itemID" Type="Ref">/My Computer/data/postgresql/Microsoft.Extensions.Logging.Abstractions.dll</Property>
+				<Property Name="Source[16].itemID" Type="Ref">/My Computer/data/postgresql/System.Buffers.dll</Property>
 				<Property Name="Source[17].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[17].itemID" Type="Ref">/My Computer/data/postgresql/Npgsql.dll</Property>
+				<Property Name="Source[17].itemID" Type="Ref">/My Computer/data/postgresql/System.Collections.Immutable.dll</Property>
 				<Property Name="Source[18].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[18].itemID" Type="Ref">/My Computer/data/postgresql/System.Buffers.dll</Property>
+				<Property Name="Source[18].itemID" Type="Ref">/My Computer/data/postgresql/System.Diagnostics.DiagnosticSource.dll</Property>
 				<Property Name="Source[19].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[19].itemID" Type="Ref">/My Computer/data/postgresql/System.Collections.Immutable.dll</Property>
+				<Property Name="Source[19].itemID" Type="Ref">/My Computer/data/postgresql/System.Memory.dll</Property>
 				<Property Name="Source[2].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[2].Container.depDestIndex" Type="Int">0</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">2</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/My Computer/data</Property>
 				<Property Name="Source[2].type" Type="Str">Container</Property>
 				<Property Name="Source[20].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[20].itemID" Type="Ref">/My Computer/data/postgresql/System.Diagnostics.DiagnosticSource.dll</Property>
+				<Property Name="Source[20].itemID" Type="Ref">/My Computer/data/postgresql/System.Numerics.Vectors.dll</Property>
 				<Property Name="Source[21].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[21].itemID" Type="Ref">/My Computer/data/postgresql/System.Memory.dll</Property>
+				<Property Name="Source[21].itemID" Type="Ref">/My Computer/data/postgresql/System.Runtime.CompilerServices.Unsafe.dll</Property>
 				<Property Name="Source[22].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[22].itemID" Type="Ref">/My Computer/data/postgresql/System.Numerics.Vectors.dll</Property>
+				<Property Name="Source[22].itemID" Type="Ref">/My Computer/data/postgresql/System.Text.Encodings.Web.dll</Property>
 				<Property Name="Source[23].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[23].itemID" Type="Ref">/My Computer/data/postgresql/System.Runtime.CompilerServices.Unsafe.dll</Property>
+				<Property Name="Source[23].itemID" Type="Ref">/My Computer/data/postgresql/System.Text.Json.dll</Property>
 				<Property Name="Source[24].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[24].itemID" Type="Ref">/My Computer/data/postgresql/System.Text.Encodings.Web.dll</Property>
+				<Property Name="Source[24].itemID" Type="Ref">/My Computer/data/postgresql/System.Threading.Channels.dll</Property>
 				<Property Name="Source[25].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[25].itemID" Type="Ref">/My Computer/data/postgresql/System.Text.Json.dll</Property>
+				<Property Name="Source[25].itemID" Type="Ref">/My Computer/data/postgresql/System.Threading.Tasks.Extensions.dll</Property>
 				<Property Name="Source[26].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[26].itemID" Type="Ref">/My Computer/data/postgresql/System.Threading.Channels.dll</Property>
-				<Property Name="Source[27].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[27].itemID" Type="Ref">/My Computer/data/postgresql/System.Threading.Tasks.Extensions.dll</Property>
-				<Property Name="Source[28].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[28].itemID" Type="Ref">/My Computer/ORM_DBC_Odbc.lvlib</Property>
-				<Property Name="Source[28].Library.allowMissingMembers" Type="Bool">true</Property>
-				<Property Name="Source[28].Library.atomicCopy" Type="Bool">true</Property>
-				<Property Name="Source[28].Library.LVLIBPtopLevel" Type="Bool">true</Property>
-				<Property Name="Source[28].preventRename" Type="Bool">true</Property>
-				<Property Name="Source[28].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[28].type" Type="Str">Library</Property>
+				<Property Name="Source[26].itemID" Type="Ref">/My Computer/ORM_DBC_Odbc.lvlib</Property>
+				<Property Name="Source[26].Library.allowMissingMembers" Type="Bool">true</Property>
+				<Property Name="Source[26].Library.atomicCopy" Type="Bool">true</Property>
+				<Property Name="Source[26].Library.LVLIBPtopLevel" Type="Bool">true</Property>
+				<Property Name="Source[26].preventRename" Type="Bool">true</Property>
+				<Property Name="Source[26].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[26].type" Type="Str">Library</Property>
 				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[3].itemID" Type="Ref">/My Computer/data/kdb/kdbplib.dll</Property>
 				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
@@ -668,10 +664,14 @@
 				<Property Name="Source[7].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[7].type" Type="Str">Library</Property>
 				<Property Name="Source[8].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[8].itemID" Type="Ref">/</Property>
+				<Property Name="Source[8].itemID" Type="Ref">/My Computer/ORM_DBC_MySql.lvlib</Property>
+				<Property Name="Source[8].Library.allowMissingMembers" Type="Bool">true</Property>
+				<Property Name="Source[8].type" Type="Str">Library</Property>
 				<Property Name="Source[9].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[9].itemID" Type="Ref">/</Property>
-				<Property Name="SourceCount" Type="Int">29</Property>
+				<Property Name="Source[9].itemID" Type="Ref">/My Computer/ORM_DBC_Npgsql.lvlib</Property>
+				<Property Name="Source[9].Library.allowMissingMembers" Type="Bool">true</Property>
+				<Property Name="Source[9].type" Type="Str">Library</Property>
+				<Property Name="SourceCount" Type="Int">27</Property>
 				<Property Name="TgtF_companyName" Type="Str">Viviota</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">ORM_DBC_Odbc</Property>
 				<Property Name="TgtF_internalName" Type="Str">ORM_DBC_Odbc</Property>
@@ -690,7 +690,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x64/shared</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{ED81876C-7313-47A5-BED7-A737F6754D57}</Property>
-				<Property Name="Bld_version.build" Type="Int">20</Property>
+				<Property Name="Bld_version.build" Type="Int">24</Property>
 				<Property Name="Bld_version.major" Type="Int">2</Property>
 				<Property Name="Bld_version.minor" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">ORM_DBC_Sqlite.lvlibp</Property>
@@ -702,11 +702,11 @@
 				<Property Name="Destination[1].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x64/shared</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[2].destName" Type="Str">data_orm</Property>
-				<Property Name="Destination[2].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x64/shared/data_orm</Property>
+				<Property Name="Destination[2].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x64/shared/_NET</Property>
 				<Property Name="Destination[2].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{97B37B97-E1AC-476B-9FD3-36595E8055AA}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{4DAA8AFD-174B-4942-BCEF-D28671C48CB1}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/ORM_DBC_Sqlite.lvlib</Property>
@@ -804,7 +804,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x64/shared</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{A5FACB12-29A9-484F-B134-7E9E21B029E8}</Property>
-				<Property Name="Bld_version.build" Type="Int">20</Property>
+				<Property Name="Bld_version.build" Type="Int">24</Property>
 				<Property Name="Bld_version.major" Type="Int">2</Property>
 				<Property Name="Bld_version.minor" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">ORM_DBC_Kdb.lvlibp</Property>
@@ -816,11 +816,11 @@
 				<Property Name="Destination[1].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x64/shared</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[2].destName" Type="Str">data_orm</Property>
-				<Property Name="Destination[2].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x64/shared/data_orm</Property>
+				<Property Name="Destination[2].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x64/shared/_NET</Property>
 				<Property Name="Destination[2].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{97B37B97-E1AC-476B-9FD3-36595E8055AA}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{4DAA8AFD-174B-4942-BCEF-D28671C48CB1}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/ORM_DBC_Sqlite.lvlib</Property>
@@ -867,7 +867,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x64/shared</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{259D962C-6282-42E0-B101-EC5C2A93691F}</Property>
-				<Property Name="Bld_version.build" Type="Int">20</Property>
+				<Property Name="Bld_version.build" Type="Int">24</Property>
 				<Property Name="Bld_version.major" Type="Int">2</Property>
 				<Property Name="Bld_version.minor" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">ORM_DBC_Mssql.lvlibp</Property>
@@ -931,7 +931,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x64/shared</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{2DD71077-68C3-4028-8B7E-C511F7EF55DD}</Property>
-				<Property Name="Bld_version.build" Type="Int">20</Property>
+				<Property Name="Bld_version.build" Type="Int">24</Property>
 				<Property Name="Bld_version.major" Type="Int">2</Property>
 				<Property Name="Bld_version.minor" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">ORM_DBC_MySql.lvlibp</Property>
@@ -943,11 +943,11 @@
 				<Property Name="Destination[1].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x64/shared</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[2].destName" Type="Str">data_orm</Property>
-				<Property Name="Destination[2].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x64/shared/data_orm</Property>
+				<Property Name="Destination[2].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x64/shared/_NET</Property>
 				<Property Name="Destination[2].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{97B37B97-E1AC-476B-9FD3-36595E8055AA}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{4DAA8AFD-174B-4942-BCEF-D28671C48CB1}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/ORM_DBC_Sqlite.lvlib</Property>
@@ -999,7 +999,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x64/shared</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{BA988231-D684-43D1-8034-498EAAE3FD8E}</Property>
-				<Property Name="Bld_version.build" Type="Int">20</Property>
+				<Property Name="Bld_version.build" Type="Int">25</Property>
 				<Property Name="Bld_version.major" Type="Int">2</Property>
 				<Property Name="Bld_version.minor" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">ORM_DBC_Npgsql.lvlibp</Property>
@@ -1011,11 +1011,11 @@
 				<Property Name="Destination[1].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x64/shared</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[2].destName" Type="Str">data_orm</Property>
-				<Property Name="Destination[2].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x64/shared/data_orm</Property>
+				<Property Name="Destination[2].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x64/shared/_NET</Property>
 				<Property Name="Destination[2].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{97B37B97-E1AC-476B-9FD3-36595E8055AA}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{4DAA8AFD-174B-4942-BCEF-D28671C48CB1}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/ORM_DBC_Sqlite.lvlib</Property>
@@ -1074,6 +1074,9 @@
 				<Property Name="Source[25].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[25].itemID" Type="Ref">/My Computer/data/postgresql/System.Threading.Tasks.Extensions.dll</Property>
 				<Property Name="Source[25].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[26].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[26].itemID" Type="Ref">/My Computer/data/postgresql/System.IO.Pipelines.dll</Property>
+				<Property Name="Source[26].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[3].itemID" Type="Ref">/My Computer/data/kdb/kdbplib.dll</Property>
 				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
@@ -1100,7 +1103,7 @@
 				<Property Name="Source[9].preventRename" Type="Bool">true</Property>
 				<Property Name="Source[9].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[9].type" Type="Str">Library</Property>
-				<Property Name="SourceCount" Type="Int">26</Property>
+				<Property Name="SourceCount" Type="Int">27</Property>
 				<Property Name="TgtF_companyName" Type="Str">Viviota</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">ORM_DBC_Npgsql</Property>
 				<Property Name="TgtF_internalName" Type="Str">ORM_DBC_Npgsql</Property>
@@ -1119,7 +1122,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x64/shared</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{22031CF3-FC95-48C3-9DCD-F0B18F1FC0F0}</Property>
-				<Property Name="Bld_version.build" Type="Int">20</Property>
+				<Property Name="Bld_version.build" Type="Int">24</Property>
 				<Property Name="Bld_version.major" Type="Int">2</Property>
 				<Property Name="Bld_version.minor" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">ORM_DBC_Odbc.lvlibp</Property>

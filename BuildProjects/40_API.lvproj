@@ -45,17 +45,22 @@
 			<Item Name="GetAll Testbed.vi" Type="VI" URL="../../Example Code/SQL Examples/GetAll Testbed.vi"/>
 			<Item Name="kdbTestCRUD.vi" Type="VI" URL="../../Example Code/SQL Examples/kdbTestCRUD.vi"/>
 			<Item Name="MSSQL Example.vi" Type="VI" URL="../../Example Code/SQL Examples/MSSQL Example.vi"/>
+			<Item Name="ORM_Examples.lvlib" Type="Library" URL="../../Example Code/ORM_Examples.lvlib"/>
 			<Item Name="Postgres Example.vi" Type="VI" URL="../../Example Code/SQL Examples/Postgres Example.vi"/>
 			<Item Name="Query Example.vi" Type="VI" URL="../../Example Code/SQL Examples/Query Example.vi"/>
 			<Item Name="Query First Example.vi" Type="VI" URL="../../Example Code/SQL Examples/Query First Example.vi"/>
 			<Item Name="Query Next Example.vi" Type="VI" URL="../../Example Code/SQL Examples/Query Next Example.vi"/>
 		</Item>
 		<Item Name="support" Type="Folder">
-			<Item Name="KpNet.KdbPlusClient.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_orm/KpNet.KdbPlusClient.dll"/>
-			<Item Name="Microsoft.Bcl.AsyncInterfaces.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_orm/Microsoft.Bcl.AsyncInterfaces.dll"/>
-			<Item Name="Microsoft.Extensions.Logging.Abstractions.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_orm/Microsoft.Extensions.Logging.Abstractions.dll"/>
-			<Item Name="MySql.Data.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_orm/MySql.Data.dll"/>
-			<Item Name="Npgsql.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_orm/Npgsql.dll"/>
+			<Item Name="kdbplib.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/kdbplib.dll"/>
+			<Item Name="KpNet.Common.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/KpNet.Common.dll"/>
+			<Item Name="KpNet.KdbPlusClient.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/KpNet.KdbPlusClient.dll"/>
+			<Item Name="Microsoft.Bcl.AsyncInterfaces.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/Microsoft.Bcl.AsyncInterfaces.dll"/>
+			<Item Name="Microsoft.Bcl.HashCode.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/Microsoft.Bcl.HashCode.dll"/>
+			<Item Name="Microsoft.Extensions.DependencyInjection.Abstractions.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/Microsoft.Extensions.DependencyInjection.Abstractions.dll"/>
+			<Item Name="Microsoft.Extensions.Logging.Abstractions.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/Microsoft.Extensions.Logging.Abstractions.dll"/>
+			<Item Name="MySqlConnector.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/MySqlConnector.dll"/>
+			<Item Name="Npgsql.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/Npgsql.dll"/>
 			<Item Name="ORM.lvlibp" Type="LVLibp" URL="/&lt;vilib&gt;/Viviota/shared/ORM.lvlibp">
 				<Item Name="Types" Type="Folder">
 					<Item Name="AdvReadCfg.ctl" Type="VI" URL="/&lt;vilib&gt;/Viviota/shared/ORM.lvlibp/ORM/DbConnection/AdvReadCfg.ctl"/>
@@ -163,13 +168,19 @@
 				<Item Name="ObjectLUT.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Viviota/shared/ORM_lib.lvlibp/ObjectRow/ObjectLUT.lvclass"/>
 				<Item Name="ObjectMap.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Viviota/shared/ORM_lib.lvlibp/ObjectMap/ObjectMap.lvclass"/>
 			</Item>
-			<Item Name="System.Data.SQLite.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_orm/System.Data.SQLite.dll"/>
-			<Item Name="System.Diagnostics.DiagnosticSource.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_orm/System.Diagnostics.DiagnosticSource.dll"/>
-			<Item Name="System.Memory.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_orm/System.Memory.dll"/>
-			<Item Name="System.Runtime.CompilerServices.Unsafe.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_orm/System.Runtime.CompilerServices.Unsafe.dll"/>
-			<Item Name="System.Text.Json.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_orm/System.Text.Json.dll"/>
-			<Item Name="System.Threading.Channels.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_orm/System.Threading.Channels.dll"/>
-			<Item Name="System.Threading.Tasks.Extensions.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_orm/System.Threading.Tasks.Extensions.dll"/>
+			<Item Name="SQLite.Interop.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/SQLite.Interop.dll"/>
+			<Item Name="System.Buffers.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/System.Buffers.dll"/>
+			<Item Name="System.Collections.Immutable.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/System.Collections.Immutable.dll"/>
+			<Item Name="System.Data.SQLite.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/System.Data.SQLite.dll"/>
+			<Item Name="System.Diagnostics.DiagnosticSource.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/System.Diagnostics.DiagnosticSource.dll"/>
+			<Item Name="System.IO.Pipelines.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/System.IO.Pipelines.dll"/>
+			<Item Name="System.Memory.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/System.Memory.dll"/>
+			<Item Name="System.Numerics.Vectors.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/System.Numerics.Vectors.dll"/>
+			<Item Name="System.Runtime.CompilerServices.Unsafe.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/System.Runtime.CompilerServices.Unsafe.dll"/>
+			<Item Name="System.Text.Encodings.Web.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/System.Text.Encodings.Web.dll"/>
+			<Item Name="System.Text.Json.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/System.Text.Json.dll"/>
+			<Item Name="System.Threading.Channels.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/System.Threading.Channels.dll"/>
+			<Item Name="System.Threading.Tasks.Extensions.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/System.Threading.Tasks.Extensions.dll"/>
 		</Item>
 		<Item Name="Vehicle2" Type="Folder">
 			<Item Name="Vehicle2.lvclass" Type="LVClass" URL="../../Example Code/Vehicle2/Vehicle2.lvclass"/>
@@ -184,10 +195,11 @@
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
+				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
-				<Item Name="Dapper.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_orm/Dapper.dll"/>
+				<Item Name="Dapper.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/Dapper.dll"/>
 				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
 				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
 				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogTypeEnum.ctl"/>
@@ -213,7 +225,6 @@
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="LVDateTimeRec.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVDateTimeRec.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
-				<Item Name="MySqlConnector.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_orm/MySqlConnector.dll"/>
 				<Item Name="NI_Data Type.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/Data Type/NI_Data Type.lvlib"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
