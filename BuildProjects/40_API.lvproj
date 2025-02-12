@@ -13,44 +13,6 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="SQL Examples" Type="Folder">
-			<Item Name="Album" Type="Folder">
-				<Item Name="Album.lvclass" Type="LVClass" URL="../../Example Code/SQL Examples/Album/Album.lvclass"/>
-			</Item>
-			<Item Name="AlbumMap" Type="Folder">
-				<Item Name="AlbumMap.lvclass" Type="LVClass" URL="../../Example Code/SQL Examples/AlbumMap/AlbumMap.lvclass"/>
-			</Item>
-			<Item Name="BB Players" Type="Folder">
-				<Item Name="bbPlayers.lvclass" Type="LVClass" URL="../../Example Code/SQL Examples/BB Players/bbPlayers.lvclass"/>
-			</Item>
-			<Item Name="BB Players Map" Type="Folder">
-				<Item Name="BB Players Map.lvclass" Type="LVClass" URL="../../Example Code/SQL Examples/BB Players Map/BB Players Map.lvclass"/>
-			</Item>
-			<Item Name="Vehicle" Type="Folder">
-				<Item Name="Vehicle.lvclass" Type="LVClass" URL="../../Example Code/SQL Examples/Vehicle/Vehicle.lvclass"/>
-			</Item>
-			<Item Name="Vehicle2" Type="Folder"/>
-			<Item Name="VehicleMap" Type="Folder">
-				<Item Name="VehicleMap.lvclass" Type="LVClass" URL="../../Example Code/SQL Examples/VehicleMap/VehicleMap.lvclass"/>
-			</Item>
-			<Item Name="CRUD Create Example.vi" Type="VI" URL="../../Example Code/SQL Examples/CRUD Create Example.vi"/>
-			<Item Name="CRUD Delete Example.vi" Type="VI" URL="../../Example Code/SQL Examples/CRUD Delete Example.vi"/>
-			<Item Name="CRUD Read All Example.vi" Type="VI" URL="../../Example Code/SQL Examples/CRUD Read All Example.vi"/>
-			<Item Name="CRUD Read Example.vi" Type="VI" URL="../../Example Code/SQL Examples/CRUD Read Example.vi"/>
-			<Item Name="CRUD Testbed.vi" Type="VI" URL="../../Example Code/SQL Examples/CRUD Testbed.vi"/>
-			<Item Name="CRUD Testbed2.vi" Type="VI" URL="../../Example Code/SQL Examples/CRUD Testbed2.vi"/>
-			<Item Name="CRUD Update Example.vi" Type="VI" URL="../../Example Code/SQL Examples/CRUD Update Example.vi"/>
-			<Item Name="Dapper Testbed.vi" Type="VI" URL="../../Example Code/SQL Examples/Dapper Testbed.vi"/>
-			<Item Name="Execute Example.vi" Type="VI" URL="../../Example Code/SQL Examples/Execute Example.vi"/>
-			<Item Name="GetAll Testbed.vi" Type="VI" URL="../../Example Code/SQL Examples/GetAll Testbed.vi"/>
-			<Item Name="kdbTestCRUD.vi" Type="VI" URL="../../Example Code/SQL Examples/kdbTestCRUD.vi"/>
-			<Item Name="MSSQL Example.vi" Type="VI" URL="../../Example Code/SQL Examples/MSSQL Example.vi"/>
-			<Item Name="ORM_Examples.lvlib" Type="Library" URL="../../Example Code/ORM_Examples.lvlib"/>
-			<Item Name="Postgres Example.vi" Type="VI" URL="../../Example Code/SQL Examples/Postgres Example.vi"/>
-			<Item Name="Query Example.vi" Type="VI" URL="../../Example Code/SQL Examples/Query Example.vi"/>
-			<Item Name="Query First Example.vi" Type="VI" URL="../../Example Code/SQL Examples/Query First Example.vi"/>
-			<Item Name="Query Next Example.vi" Type="VI" URL="../../Example Code/SQL Examples/Query Next Example.vi"/>
-		</Item>
 		<Item Name="support" Type="Folder">
 			<Item Name="kdbplib.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/kdbplib.dll"/>
 			<Item Name="KpNet.Common.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/KpNet.Common.dll"/>
@@ -182,10 +144,8 @@
 			<Item Name="System.Threading.Channels.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/System.Threading.Channels.dll"/>
 			<Item Name="System.Threading.Tasks.Extensions.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/System.Threading.Tasks.Extensions.dll"/>
 		</Item>
-		<Item Name="Vehicle2" Type="Folder">
-			<Item Name="Vehicle2.lvclass" Type="LVClass" URL="../../Example Code/Vehicle2/Vehicle2.lvclass"/>
-		</Item>
 		<Item Name="ORM_API.lvlib" Type="Library" URL="../../ORM_API/ORM_API.lvlib"/>
+		<Item Name="ORM_Examples.lvlib" Type="Library" URL="../../Example Code/ORM_Examples.lvlib"/>
 		<Item Name="readme.vi" Type="VI" URL="../../readme.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
@@ -194,6 +154,7 @@
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
+				<Item Name="Base64 Support.lvlib" Type="Library" URL="/&lt;vilib&gt;/JDP Science/JDP Science Common Utilities/Base64/Base64 Support.lvlib"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
@@ -219,11 +180,15 @@
 				<Item Name="Get Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Get Text Rect.vi"/>
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
 				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
-				<Item Name="High Resolution Relative Seconds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/High Resolution Relative Seconds.vi"/>
+				<Item Name="JDP Timestamp.lvlib" Type="Library" URL="/&lt;vilib&gt;/JDP Science/JDP Science Common Utilities/Timestamp/JDP Timestamp.lvlib"/>
+				<Item Name="JDP Utility.lvlib" Type="Library" URL="/&lt;vilib&gt;/JDP Science/JDP Science Common Utilities/JDP Utility.lvlib"/>
+				<Item Name="JSONtext LVClass Serializer.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/JDP Science/JSONtext/LVClass Serializer/JSONtext LVClass Serializer.lvclass"/>
+				<Item Name="JSONtext.lvlib" Type="Library" URL="/&lt;vilib&gt;/JDP Science/JSONtext/JSONtext.lvlib"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LV70DateRecToTimeStamp.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/LV70DateRecToTimeStamp.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="LVDateTimeRec.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVDateTimeRec.ctl"/>
+				<Item Name="LVNumericRepresentation.ctl" Type="VI" URL="/&lt;vilib&gt;/numeric/LVNumericRepresentation.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="NI_Data Type.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/Data Type/NI_Data Type.lvlib"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
