@@ -22,15 +22,18 @@ Some care has been given to support database optimized capabilities and datatypi
 The ADO.NET connection is used to support individual database interactions.  
 The .NET interface used is NetStandard2.0 and the following packages are used:
 
-- PostgreSQL : npgsql v8.0.3
+(Updated 2025.02.18)
+- PostgreSQL : npgsql v8.0.6
 - Microsoft SQL Server : System.Data.SqlConnection (built-in)
 - SQLite : System.Data.SQLite v1.0.118
-- MySQL : MySqlConnecto v2.3.6
+- MySQL : MySqlConnecto v2.4.0
 - kdb+ : KpNet
 
 A Dapper Interface is also included, however that is not actively developed/supported/tested.
 
-Binary Dependencies are not currently included in the repository, but are included in the VIPM package.
+Binary Dependencies are not currently included in the repository, but are included in the VIPM package, and included as an artifact in releases
+
+It's intended that these dependencies will be migrated to a "common" VIPM package/repo in the future, because other packages depend on them.
 
 ## .config files
 The NetStandard2.0 dependency means that in some cases a .config XML file is required for development/deployment to make sure that dependencies are loaded correctly.
@@ -46,11 +49,16 @@ The .config files that live next to the LabVIEW project files in "BuildProjects"
 ## Packed Library Support
 This library is built with PPL / Common-reuse patterns in mind.  It is split between a main library and the "API" library, which wraps functions from the main library.  Only the API library is used on the palettes.
 
-This library is distributed with PPLs (currently only for Windows).  However, in the based library they are unreferenced.
+This library is distributed with PPLs (currently only for Windows).  
+A .zip file with "debug" versions of the libraries is also included in the distribution.
 
-A secondary "PPLAPIs" VIPM package is provided which will override the API library with one that references the PPLs.  This allows for easier PPL linking.
+## Library use
+Please see the "ORM Full Example.vi" VI for an example of how to use the library.
+
 
 ## Contributing
+
+Because of the PPL nature of this project, there are several projects for use in development.  These are located in the "BuildProjects" directory.  ** The project files in the main directory were from before PPL replacement and should not be used **
 
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
