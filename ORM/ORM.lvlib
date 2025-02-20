@@ -21,5 +21,5 @@
 	<Item Name="Query Result.lvclass" Type="LVClass" URL="../Query Result/Query Result.lvclass"/>
 	<Item Name="DynamicParameters.lvclass" Type="LVClass" URL="../DynamicParameters/DynamicParameters.lvclass"/>
 	<Item Name="TypeMap.lvclass" Type="LVClass" URL="../TypeMap/TypeMap.lvclass"/>
-	<Item Name="LogMap.lvclass" Type="LVClass" URL="../../Transaction Logger/Log Map/LogMap.lvclass"/>
+	<Item Name="LogMap.lvclass" Type="LVClass" URL="../Transaction Logger/Log Map/LogMap.lvclass"/>
 </Library>
