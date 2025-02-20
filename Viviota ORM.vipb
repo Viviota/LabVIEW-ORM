@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2018" Created_Date="2018-12-13 09:10:55" Modified_Date="2025-02-20 14:43:59" Creator="Justin" Comments="" ID="a1b021eeac9e137ad151b4f2902ae205">
+<VI_Package_Builder_Settings Version="2018" Created_Date="2018-12-13 09:10:55" Modified_Date="2025-02-20 15:24:52" Creator="Justin" Comments="" ID="858034721ce85c7a3b482a0788f3b764">
   <Library_General_Settings>
     <Package_File_Name>Viviota_lib_Viviota_ORM</Package_File_Name>
-    <Library_Version>5.0.0.93</Library_Version>
+    <Library_Version>5.0.0.94</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..\..\..\..\Builds\VIPM\LabVIEW_ORM</Library_Output_Folder>
@@ -160,21 +160,6 @@ NOTE: This library relies on .NETStandard 2.0 libraries. These are included with
         <Path>ORM</Path>
       </Exclusions>
       <Exclusions>
-        <Path>Transaction Logger</Path>
-      </Exclusions>
-      <Exclusions>
-        <Path>LabVIEW ORM.lvproj</Path>
-      </Exclusions>
-      <Exclusions>
-        <Path>LabVIEW ORM.lvproj.config</Path>
-      </Exclusions>
-      <Exclusions>
-        <Path>LabVIEW ORM_API.lvproj</Path>
-      </Exclusions>
-      <Exclusions>
-        <Path>LabVIEW ORM_API.lvproj.config</Path>
-      </Exclusions>
-      <Exclusions>
         <Path>Post-Uninstall Custom Action.vi</Path>
       </Exclusions>
       <Exclusions>
@@ -200,9 +185,6 @@ NOTE: This library relies on .NETStandard 2.0 libraries. These are included with
       </Exclusions>
       <Exclusions>
         <Path>Const_Dapper.vi</Path>
-      </Exclusions>
-      <Exclusions>
-        <Path>mydb - Copy.db</Path>
       </Exclusions>
       <Exclusions>
         <Path>mydb.db</Path>
@@ -352,7 +334,7 @@ NOTE: This library relies on .NETStandard 2.0 libraries. These are included with
         <Path>Example Code\ORM Full Example.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>E97D82E85DB05E3D8A95F1D5ACD960B8</GUID>
+      <GUID>EC89B2C3F15E939446D73C90718408F1</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -723,7 +705,7 @@ NOTE: This library relies on .NETStandard 2.0 libraries. These are included with
         <Path>ORM_API\CreateAppConfig.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>2C9F8009E5BB1183DF818E8404B18783</GUID>
+      <GUID>5E8F5825861C0826867C45C9DA8F11C0</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1038,7 +1020,7 @@ NOTE: This library relies on .NETStandard 2.0 libraries. These are included with
         <Path>Example Code\SQL Examples\Postgres Example.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>209ED69B86698CAF1190B9C50EC3E934</GUID>
+      <GUID>AB5B95CFF431C4C4F9531EF7C3F90213</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -1115,7 +1097,7 @@ NOTE: This library relies on .NETStandard 2.0 libraries. These are included with
         <Path>Example Code\SQL Examples\Album\Write Title.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>8433A8CBFB71C94AE51C4FFCDD992D33</GUID>
+      <GUID>9FD57D97B5DD1C2D651BF4A73552B4D6</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -1192,7 +1174,7 @@ NOTE: This library relies on .NETStandard 2.0 libraries. These are included with
         <Path>Example Code\SQL Examples\AlbumMap\To LabVIEW.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>8FFE65912AC2B5209C025E03B09F83AE</GUID>
+      <GUID>115393A6AA752CCB5FF4E63B9B367F12</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -1353,7 +1335,7 @@ NOTE: This library relies on .NETStandard 2.0 libraries. These are included with
         <Path>Example Code\SQL Examples\BB Players\Write pNum.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>7A762811EFADC9D62EFA50A0D00ADAF0</GUID>
+      <GUID>D900FC0662A6720A4F57A0BCD1ACF596</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -1430,7 +1412,7 @@ NOTE: This library relies on .NETStandard 2.0 libraries. These are included with
         <Path>Example Code\SQL Examples\BB Players Map\To LabVIEW.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>2E8BB50E2E4683BD7325C988F9DB538C</GUID>
+      <GUID>F58F05F01C0001E4DF2CB130D7B4FDB0</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -1563,7 +1545,7 @@ NOTE: This library relies on .NETStandard 2.0 libraries. These are included with
         <Path>Example Code\SQL Examples\Vehicle\Write Year.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>E5FD14634171FA94D7FF115301B08633</GUID>
+      <GUID>C771D8BD894ECAF14578AF592730779A</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -1640,7 +1622,7 @@ NOTE: This library relies on .NETStandard 2.0 libraries. These are included with
         <Path>Example Code\SQL Examples\VehicleMap\To LabVIEW.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>8533CA7DD8C17D44B359F2EBF007BCD5</GUID>
+      <GUID>653051B021365764E89D3BDE57B78CE1</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -1759,7 +1741,7 @@ NOTE: This library relies on .NETStandard 2.0 libraries. These are included with
         <Path>ORM_API\Advanced\QueryFirst_SQL.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>85D280EB4E85C79F57D9307DE530E6EB</GUID>
+      <GUID>4FFBFE16693939DA76A57EA3BDEE49DB</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -1934,7 +1916,7 @@ NOTE: This library relies on .NETStandard 2.0 libraries. These are included with
         <Path>ORM_API\Utilities\Next.vim</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>71544ECC6E66C21D161787FADCBCC034</GUID>
+      <GUID>41886DEBBBC6D1F6A964F2C1B259DF7B</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -2095,7 +2077,7 @@ NOTE: This library relies on .NETStandard 2.0 libraries. These are included with
         <Path>Example Code\SQL Examples\Vehicle\Write Year.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>A863F26B359B6648E0104E225E1A495D</GUID>
+      <GUID>C23EAA5E3A9D4CFED7617A03148F3A72</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

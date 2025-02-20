@@ -142,6 +142,8 @@
 			<Item Name="System.Threading.Channels.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/System.Threading.Channels.dll"/>
 			<Item Name="System.Threading.Tasks.Extensions.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/System.Threading.Tasks.Extensions.dll"/>
 		</Item>
+		<Item Name="Const_ADO.vi" Type="VI" URL="../../Const_ADO.vi"/>
+		<Item Name="Const_Dapper.vi" Type="VI" URL="../../Const_Dapper.vi"/>
 		<Item Name="ORM_API.lvlib" Type="Library" URL="../../ORM_API/ORM_API.lvlib"/>
 		<Item Name="ORM_Examples.lvlib" Type="Library" URL="../../Example Code/ORM_Examples.lvlib"/>
 		<Item Name="readme.vi" Type="VI" URL="../../readme.vi"/>
@@ -215,6 +217,8 @@
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="ORM_DBC_Npgsql.lvlib" Type="Library" URL="../../DbConnections/PostgresqlConnection/ORM_DBC_Npgsql.lvlib"/>
+			<Item Name="ORM_DBC_Sqlite.lvlib" Type="Library" URL="../../DbConnections/SqliteConnection/ORM_DBC_Sqlite.lvlib"/>
 			<Item Name="System.Data" Type="Document" URL="System.Data">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
