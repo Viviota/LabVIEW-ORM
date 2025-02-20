@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="18008000">
+<Project Type="Project" LVVersion="20008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
@@ -18,10 +18,11 @@
 				<Item Name=".NET Object To Variant.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/dotnet.llb/.NET Object To Variant.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Helpers.lvlib" Type="Library" URL="/&lt;vilib&gt;/Viviota/VIV_Tools/Helpers.lvlib"/>
-				<Item Name="KpNet.KdbPlusClient.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/Viviota ORM/libraries/kdb/KpNet.KdbPlusClient.dll"/>
+				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
 				<Item Name="To .NET Object.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/dotnet.llb/To .NET Object.vi"/>
 			</Item>
-			<Item Name="KpNet.KdbPlusClient.dll" Type="Document" URL="../../libraries/kdb/KpNet.KdbPlusClient.dll"/>
+			<Item Name="KpNet.KdbPlusClient.dll" Type="Document" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2018/vi.lib/Viviota/Viviota ORM/libraries/kdb/KpNet.KdbPlusClient.dll"/>
+			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
