@@ -6,7 +6,10 @@ It provides the ability to map internal LabVIEW classes to database tables.
 The ORM capaibilities are managed by both a class & interface cability.
 The database connectivity is handled by the ADO.NET database connections, however the base functionality does NOT have a dependency on this, so it could be replaced with other database connectivity (such as the LabVIEW Database Toolkit).
 
-This library is written for LabVIEW 2020+
+This library is written and maintained for LabVIEW 2020+
+(some new add-ons will be provided for LabVIEW 2025+ with .NETCore dependencies)
+
+Note: There are many edge cases in ORM & cross-database support.  If you find a bug/issue, please report it!
 
 ## Database Support
 This tool currently supports the following databases:
@@ -22,18 +25,18 @@ Some care has been given to support database optimized capabilities and datatypi
 The ADO.NET connection is used to support individual database interactions.  
 The .NET interface used is NetStandard2.0 and the following packages are used:
 
-(Updated 2025.02.18)
-- PostgreSQL : npgsql v8.0.6
+(Updated 2026.07.09)
+- PostgreSQL : npgsql v8.0.9
 - Microsoft SQL Server : System.Data.SqlConnection (built-in)
-- SQLite : System.Data.SQLite v1.0.118
-- MySQL : MySqlConnecto v2.4.0
+- SQLite : System.Data.SQLite: v2.0.3
+- MySQL : MySqlConnector: v2.6.1
 - kdb+ : KpNet
 
 A Dapper Interface is also included, however that is not actively developed/supported/tested.
 
 Binary Dependencies are not currently included in the repository, but are included in the VIPM package, and included as an artifact in releases
 
-It's intended that these dependencies will be migrated to a "common" VIPM package/repo in the future, because other packages depend on them.
+The common dependencies for the .NETStandard libraries can be found [here](https://github.com/Viviota/LabVIEW-Viviota-NS2-Common).
 
 ## .config files
 The NetStandard2.0 dependency means that in some cases a .config XML file is required for development/deployment to make sure that dependencies are loaded correctly.
@@ -51,6 +54,7 @@ This library is built with PPL / Common-reuse patterns in mind.  It is split bet
 
 This library is distributed with PPLs (currently only for Windows).  
 A .zip file with "debug" versions of the libraries is also included in the distribution.
+These can be found next to the built PPLs in a debug folder with the \*.dbg extension (to avoid bad linking).  Just remove this extension and swap them out for usage.
 
 ## Library use
 Please see the "ORM Full Example.vi" VI for an example of how to use the library.
@@ -70,8 +74,8 @@ To contribute to this toolkit, you will need LabVIEW 2020.
 
 ## Credits
 
-CtlReferences LabVIEW library is an open source project maintained by Viviota and licensed by the BSD 3-Clause license
+This LabVIEW library is an open source project maintained by Viviota and licensed by the BSD 3-Clause license
 
 ## License
 
-CtlReferences LabVIEW library is distributed under the open source BSD 3-Clause license providing everyone the right to use and distribute both souce code and compiled versions of this toolkit. See LICENSE.md file for details.
+This LabVIEW library is distributed under the open source BSD 3-Clause license providing everyone the right to use and distribute both souce code and compiled versions of this toolkit. See LICENSE.md file for details.
