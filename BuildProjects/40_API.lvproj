@@ -15,25 +15,48 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="support" Type="Folder">
-			<Item Name="kdbplib.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/kdbplib.dll"/>
-			<Item Name="KpNet.Common.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/KpNet.Common.dll"/>
-			<Item Name="KpNet.KdbPlusClient.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/KpNet.KdbPlusClient.dll"/>
-			<Item Name="Microsoft.Bcl.AsyncInterfaces.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/Microsoft.Bcl.AsyncInterfaces.dll"/>
-			<Item Name="Microsoft.Bcl.HashCode.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/Microsoft.Bcl.HashCode.dll"/>
-			<Item Name="Microsoft.Extensions.DependencyInjection.Abstractions.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/Microsoft.Extensions.DependencyInjection.Abstractions.dll"/>
-			<Item Name="Microsoft.Extensions.Logging.Abstractions.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/Microsoft.Extensions.Logging.Abstractions.dll"/>
-			<Item Name="MySqlConnector.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/MySqlConnector.dll"/>
-			<Item Name="Npgsql.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/Npgsql.dll"/>
+			<Item Name="dlls" Type="Folder">
+				<Item Name="System.Memory.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_ns2/System.Memory.dll"/>
+				<Item Name="System.Numerics.Vectors.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_ns2/System.Numerics.Vectors.dll"/>
+				<Item Name="System.Reflection.Emit.ILGeneration.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_ns2/System.Reflection.Emit.ILGeneration.dll"/>
+				<Item Name="System.Reflection.Emit.Lightweight.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_ns2/System.Reflection.Emit.Lightweight.dll"/>
+				<Item Name="System.Runtime.CompilerServices.Unsafe.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_ns2/System.Runtime.CompilerServices.Unsafe.dll"/>
+				<Item Name="System.Text.Encodings.Web.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_ns2/System.Text.Encodings.Web.dll"/>
+				<Item Name="System.Text.Json.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_ns2/System.Text.Json.dll"/>
+				<Item Name="System.Threading.Channels.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_ns2/System.Threading.Channels.dll"/>
+				<Item Name="System.Threading.Tasks.Extensions.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_ns2/System.Threading.Tasks.Extensions.dll"/>
+				<Item Name="Dapper.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_ns2/Dapper.dll"/>
+				<Item Name="kdbplib.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_ns2/kdbplib.dll"/>
+				<Item Name="KpNet.Common.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_ns2/KpNet.Common.dll"/>
+				<Item Name="KpNet.KdbPlusClient.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_ns2/KpNet.KdbPlusClient.dll"/>
+				<Item Name="Microsoft.Bcl.AsyncInterfaces.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_ns2/Microsoft.Bcl.AsyncInterfaces.dll"/>
+				<Item Name="Microsoft.Bcl.HashCode.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_ns2/Microsoft.Bcl.HashCode.dll"/>
+				<Item Name="Microsoft.Bcl.Memory.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_ns2/Microsoft.Bcl.Memory.dll"/>
+				<Item Name="Microsoft.Extensions.DependencyInjection.Abstractions.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_ns2/Microsoft.Extensions.DependencyInjection.Abstractions.dll"/>
+				<Item Name="Microsoft.Extensions.Logging.Abstractions.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_ns2/Microsoft.Extensions.Logging.Abstractions.dll"/>
+				<Item Name="Microsoft.IO.RecyclableMemoryStream.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_ns2/Microsoft.IO.RecyclableMemoryStream.dll"/>
+				<Item Name="MySqlConnector.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_ns2/MySqlConnector.dll"/>
+				<Item Name="Npgsql.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_ns2/Npgsql.dll"/>
+				<Item Name="Pipelines.Sockets.Unofficial.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_ns2/Pipelines.Sockets.Unofficial.dll"/>
+				<Item Name="SQLite.Interop.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_ns2/SQLite.Interop.dll"/>
+				<Item Name="System.Buffers.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_ns2/System.Buffers.dll"/>
+				<Item Name="System.Collections.Immutable.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_ns2/System.Collections.Immutable.dll"/>
+				<Item Name="System.Data.SQLite.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_ns2/System.Data.SQLite.dll"/>
+				<Item Name="System.Diagnostics.DiagnosticSource.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_ns2/System.Diagnostics.DiagnosticSource.dll"/>
+				<Item Name="System.IO.Hashing.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_ns2/System.IO.Hashing.dll"/>
+				<Item Name="System.IO.Pipelines.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_ns2/System.IO.Pipelines.dll"/>
+				<Item Name="System.Linq.AsyncEnumerable.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/data_ns2/System.Linq.AsyncEnumerable.dll"/>
+			</Item>
 			<Item Name="ORM.lvlibp" Type="LVLibp" URL="/&lt;vilib&gt;/Viviota/shared/ORM.lvlibp">
 				<Item Name="Types" Type="Folder">
-					<Item Name="AdvReadCfg.ctl" Type="VI" URL="/&lt;vilib&gt;/Viviota/shared/ORM.lvlibp/ORM/DbConnection/AdvReadCfg.ctl"/>
-					<Item Name="OrderBy.ctl" Type="VI" URL="/&lt;vilib&gt;/Viviota/shared/ORM.lvlibp/ORM/DbConnection/OrderBy.ctl"/>
+					<Item Name="AdvReadCfg.ctl" Type="VI" URL="/&lt;vilib&gt;/Viviota/shared/ORM.lvlibp/DbConnection/AdvReadCfg.ctl"/>
+					<Item Name="OrderBy.ctl" Type="VI" URL="/&lt;vilib&gt;/Viviota/shared/ORM.lvlibp/DbConnection/OrderBy.ctl"/>
 				</Item>
-				<Item Name="DbConnection.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Viviota/shared/ORM.lvlibp/ORM/DbConnection/DbConnection.lvclass"/>
-				<Item Name="SqlMapper.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Viviota/shared/ORM.lvlibp/ORM/SqlMapper/SqlMapper.lvclass"/>
-				<Item Name="Query Result.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Viviota/shared/ORM.lvlibp/ORM/Query Result/Query Result.lvclass"/>
-				<Item Name="DynamicParameters.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Viviota/shared/ORM.lvlibp/ORM/DynamicParameters/DynamicParameters.lvclass"/>
-				<Item Name="TypeMap.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Viviota/shared/ORM.lvlibp/ORM/TypeMap/TypeMap.lvclass"/>
+				<Item Name="DbConnection.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Viviota/shared/ORM.lvlibp/DbConnection/DbConnection.lvclass"/>
+				<Item Name="SqlMapper.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Viviota/shared/ORM.lvlibp/SqlMapper/SqlMapper.lvclass"/>
+				<Item Name="Query Result.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Viviota/shared/ORM.lvlibp/Query Result/Query Result.lvclass"/>
+				<Item Name="DynamicParameters.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Viviota/shared/ORM.lvlibp/DynamicParameters/DynamicParameters.lvclass"/>
+				<Item Name="TypeMap.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Viviota/shared/ORM.lvlibp/TypeMap/TypeMap.lvclass"/>
 				<Item Name="LogMap.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Viviota/shared/ORM.lvlibp/Transaction Logger/Log Map/LogMap.lvclass"/>
 				<Item Name="openg_variant.lvlib" Type="Library" URL="/&lt;vilib&gt;/Viviota/shared/ORM.lvlibp/1abvi3w/user.lib/_OpenG.lib/lvdata/lvdata.llb/openg_variant.lvlib"/>
 				<Item Name="openg_error.lvlib" Type="Library" URL="/&lt;vilib&gt;/Viviota/shared/ORM.lvlibp/1abvi3w/user.lib/_OpenG.lib/error/error.llb/openg_error.lvlib"/>
@@ -80,7 +103,7 @@
 			</Item>
 			<Item Name="ORM_DBC_dotNet.lvlibp" Type="LVLibp" URL="/&lt;vilib&gt;/Viviota/shared/ORM_DBC_dotNet.lvlibp">
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Viviota/shared/ORM_DBC_dotNet.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Clear Errors.vi"/>
-				<Item Name="ORM_DBC_dotNet.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Viviota/shared/ORM_DBC_dotNet.lvlibp/dbcDotNet/ORM_DBC_dotNet.lvclass"/>
+				<Item Name="ORM_DBC_dotNet.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Viviota/shared/ORM_DBC_dotNet.lvlibp/ORM_DBC_dotNet.lvclass"/>
 			</Item>
 			<Item Name="ORM_DBC_Kdb.lvlibp" Type="LVLibp" URL="/&lt;vilib&gt;/Viviota/shared/ORM_DBC_Kdb.lvlibp">
 				<Item Name="DBC.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Viviota/shared/ORM_DBC_Kdb.lvlibp/DBC.lvclass"/>
@@ -129,19 +152,6 @@
 				<Item Name="ObjectLUT.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Viviota/shared/ORM_lib.lvlibp/ObjectRow/ObjectLUT.lvclass"/>
 				<Item Name="ObjectMap.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Viviota/shared/ORM_lib.lvlibp/ObjectMap/ObjectMap.lvclass"/>
 			</Item>
-			<Item Name="SQLite.Interop.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/SQLite.Interop.dll"/>
-			<Item Name="System.Buffers.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/System.Buffers.dll"/>
-			<Item Name="System.Collections.Immutable.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/System.Collections.Immutable.dll"/>
-			<Item Name="System.Data.SQLite.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/System.Data.SQLite.dll"/>
-			<Item Name="System.Diagnostics.DiagnosticSource.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/System.Diagnostics.DiagnosticSource.dll"/>
-			<Item Name="System.IO.Pipelines.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/System.IO.Pipelines.dll"/>
-			<Item Name="System.Memory.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/System.Memory.dll"/>
-			<Item Name="System.Numerics.Vectors.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/System.Numerics.Vectors.dll"/>
-			<Item Name="System.Runtime.CompilerServices.Unsafe.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/System.Runtime.CompilerServices.Unsafe.dll"/>
-			<Item Name="System.Text.Encodings.Web.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/System.Text.Encodings.Web.dll"/>
-			<Item Name="System.Text.Json.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/System.Text.Json.dll"/>
-			<Item Name="System.Threading.Channels.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/System.Threading.Channels.dll"/>
-			<Item Name="System.Threading.Tasks.Extensions.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/System.Threading.Tasks.Extensions.dll"/>
 		</Item>
 		<Item Name="Const_ADO.vi" Type="VI" URL="../../Const_ADO.vi"/>
 		<Item Name="Const_Dapper.vi" Type="VI" URL="../../Const_Dapper.vi"/>
@@ -170,7 +180,6 @@
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
 				<Item Name="Create Directory Recursive.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Create Directory Recursive.vi"/>
 				<Item Name="Create NI GUID.vi" Type="VI" URL="/&lt;vilib&gt;/string/Create NI GUID.vi"/>
-				<Item Name="Dapper.dll" Type="Document" URL="/&lt;vilib&gt;/Viviota/shared/_NET/Dapper.dll"/>
 				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
 				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
 				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogTypeEnum.ctl"/>
@@ -245,14 +254,28 @@
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="ORM_DBC_Npgsql.lvlib" Type="Library" URL="../../DbConnections/PostgresqlConnection/ORM_DBC_Npgsql.lvlib"/>
-			<Item Name="ORM_DBC_Sqlite.lvlib" Type="Library" URL="../../DbConnections/SqliteConnection/ORM_DBC_Sqlite.lvlib"/>
 			<Item Name="System.Data" Type="Document" URL="System.Data">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="System.Management" Type="Document" URL="System.Management">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="SqlMapper.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Viviota/shared/ORM.lvlibp/ORM/SqlMapper/SqlMapper.lvclass"/>
+			<Item Name="DynamicParameters.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Viviota/shared/ORM.lvlibp/ORM/DynamicParameters/DynamicParameters.lvclass"/>
+			<Item Name="Create DynamicParameter.vi" Type="VI" URL="/&lt;vilib&gt;/Viviota/shared/ORM.lvlibp/ORM/TypeMap/Create DynamicParameter.vi"/>
+			<Item Name="TypeMap.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Viviota/shared/ORM.lvlibp/ORM/TypeMap/TypeMap.lvclass"/>
+			<Item Name="Query Result.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Viviota/shared/ORM.lvlibp/ORM/Query Result/Query Result.lvclass"/>
+			<Item Name="Read TypeMap.vi" Type="VI" URL="/&lt;vilib&gt;/Viviota/shared/ORM.lvlibp/ORM/TypeMap/Read TypeMap.vi"/>
+			<Item Name="Next.vi" Type="VI" URL="/&lt;vilib&gt;/Viviota/shared/ORM.lvlibp/ORM/Query Result/Next.vi"/>
+			<Item Name="ToLabVIEW_Wrap.vi" Type="VI" URL="/&lt;vilib&gt;/Viviota/shared/ORM.lvlibp/ORM/TypeMap/ToLabVIEW_Wrap.vi"/>
+			<Item Name="End Transaction.vi" Type="VI" URL="/&lt;vilib&gt;/Viviota/shared/ORM.lvlibp/ORM/SqlMapper/End Transaction.vi"/>
+			<Item Name="AdvReadCfg.ctl" Type="VI" URL="/&lt;vilib&gt;/Viviota/shared/ORM.lvlibp/ORM/DbConnection/AdvReadCfg.ctl"/>
+			<Item Name="OrderBy.ctl" Type="VI" URL="/&lt;vilib&gt;/Viviota/shared/ORM.lvlibp/ORM/DbConnection/OrderBy.ctl"/>
+			<Item Name="Where.vi" Type="VI" URL="/&lt;vilib&gt;/Viviota/shared/ORM.lvlibp/ORM/TypeMap/Where.vi"/>
+			<Item Name="Write Table Name.vi" Type="VI" URL="/&lt;vilib&gt;/Viviota/shared/ORM.lvlibp/ORM/TypeMap/Write Table Name.vi"/>
+			<Item Name="Write Autokey.vi" Type="VI" URL="/&lt;vilib&gt;/Viviota/shared/ORM.lvlibp/ORM/TypeMap/Write Autokey.vi"/>
+			<Item Name="DbConnection.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Viviota/shared/ORM.lvlibp/ORM/DbConnection/DbConnection.lvclass"/>
+			<Item Name="Write DbConnection.vi" Type="VI" URL="/&lt;vilib&gt;/Viviota/shared/ORM.lvlibp/ORM/SqlMapper/Write DbConnection.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
