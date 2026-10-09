@@ -5,7 +5,7 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="DBC.lvclass" Type="LVClass" URL="../dbc/DBC.lvclass"/>
-	<Item Name="PGJDPMapper.lvclass" Type="LVClass" URL="../PGJDPMapper/PGJDPMapper.lvclass"/>
-	<Item Name="PGJDPParameter.lvclass" Type="LVClass" URL="../PGJDPParameter/PGJDPParameter.lvclass"/>
-	<Item Name="PGJDPResult.lvclass" Type="LVClass" URL="../PGJDPResult/PGJDPResult.lvclass"/>
+	<Item Name="Mapper.lvclass" Type="LVClass" URL="../PGJDPMapper/Mapper.lvclass"/>
+	<Item Name="Parameter.lvclass" Type="LVClass" URL="../PGJDPParameter/Parameter.lvclass"/>
+	<Item Name="Result.lvclass" Type="LVClass" URL="../PGJDPResult/Result.lvclass"/>
 </Library>

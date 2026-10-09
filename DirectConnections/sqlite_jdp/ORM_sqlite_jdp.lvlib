@@ -5,7 +5,7 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="DBC.lvclass" Type="LVClass" URL="../dbc/DBC.lvclass"/>
-	<Item Name="SQLiteJDPMapper.lvclass" Type="LVClass" URL="../PGJDPMapper/SQLiteJDPMapper.lvclass"/>
-	<Item Name="SQLiteJDPParameter.lvclass" Type="LVClass" URL="../PGJDPParameter/SQLiteJDPParameter.lvclass"/>
-	<Item Name="SQLiteJDPResult.lvclass" Type="LVClass" URL="../PGJDPResult/SQLiteJDPResult.lvclass"/>
+	<Item Name="Mapper.lvclass" Type="LVClass" URL="../PGJDPMapper/Mapper.lvclass"/>
+	<Item Name="Parameter.lvclass" Type="LVClass" URL="../PGJDPParameter/Parameter.lvclass"/>
+	<Item Name="Result.lvclass" Type="LVClass" URL="../PGJDPResult/Result.lvclass"/>
 </Library>
