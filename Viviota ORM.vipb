@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2018" Created_Date="2018-12-13 09:10:55" Modified_Date="2025-11-21 15:40:22" Creator="Justin" Comments="" ID="0f6708977e6c328637c9d68b23d425ee">
+<VI_Package_Builder_Settings Version="2018" Created_Date="2018-12-13 09:10:55" Modified_Date="2026-11-05 16:46:30" Creator="Justin" Comments="" ID="a90a860707f03a62ade827027c1448cb">
   <Library_General_Settings>
     <Package_File_Name>Viviota_lib_Viviota_ORM</Package_File_Name>
-    <Library_Version>5.0.1.97</Library_Version>
+    <Library_Version>5.1.0.102</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..\..\..\..\Builds\VIPM\LabVIEW_ORM</Library_Output_Folder>
@@ -14,10 +14,13 @@
     <Product_Name>Viviota ORM</Product_Name>
     <Was_Built>true</Was_Built>
     <Target>LabVIEW</Target>
+    <Package_LabVIEW_Save_Version>false</Package_LabVIEW_Save_Version>
+    <LabVIEW_Save_Version/>
   </Library_General_Settings>
   <Advanced_Settings>
     <Package_Dependencies>
       <Additional_External_Dependencies>oglib_lvdata &gt;=4.2.0.21</Additional_External_Dependencies>
+      <Additional_External_Dependencies>viviota_lib_netstandard2_0_common &gt;=1.0.0.3</Additional_External_Dependencies>
     </Package_Dependencies>
     <Custom_Action_VIs>
       <Pre-Build_VI/>
@@ -49,11 +52,16 @@ NOTE: This library is provided in a compiled format utilyzing PPLs, a set of the
 
 NOTE: This library relies on .NETStandard 2.0 libraries. These are included with the distribution, but an "app.config" file will be required for any projects/EXEs that use this library.  The "CreateAppConfig.vi" on the palettes can do this automatically and has additional information.
 
-</Description>
+NOTE: Because of the change in the .NET dependency, those now reside in the "vi.lib\Viviota\shared\data_ns2" folder.</Description>
       <Copyright/>
       <Packager> </Packager>
       <URL/>
-      <Release_Notes>v5.0
+      <Release_Notes>v5.1
+ - separated .NET Standard dependencies into additional package
+ - added debug folders which contain debug builds of PPLs
+NOTE: Because of the change in the .NET dependency, those now reside in the "vi.lib\Viviota\shared\data_ns2" folder.
+
+v5.0
  - Forked from internal repo for open source
  - Updated .NET dependencies
  - Moved .NET dependencies to a \_NET folder
@@ -181,13 +189,19 @@ NOTE: This library relies on .NETStandard 2.0 libraries. These are included with
         <Path>app.config</Path>
       </Exclusions>
       <Exclusions>
-        <Path>Const_ADO.vi</Path>
-      </Exclusions>
-      <Exclusions>
-        <Path>Const_Dapper.vi</Path>
-      </Exclusions>
-      <Exclusions>
         <Path>mydb.db</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>DirectConnections</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>dotNetCore</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>libraries_netcore</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>__TEST</Path>
       </Exclusions>
       <Compile_Exclusions>
         <Path>_PPLBuilds</Path>
@@ -334,7 +348,7 @@ NOTE: This library relies on .NETStandard 2.0 libraries. These are included with
         <Path>Example Code\ORM Full Example.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>27446A5D829FF0DB1C8D356D8260DE3F</GUID>
+      <GUID>4BC37BB4B2181104AA26F165B7285EC1</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -705,7 +719,7 @@ NOTE: This library relies on .NETStandard 2.0 libraries. These are included with
         <Path>ORM_API\CreateAppConfig.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>96EAB531B6FDAEC2A5FBC70C274A0F02</GUID>
+      <GUID>E1FA4A6CE45629C7014E7E008365BB91</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1020,7 +1034,7 @@ NOTE: This library relies on .NETStandard 2.0 libraries. These are included with
         <Path>Example Code\SQL Examples\Postgres Example.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>FCEA43E1F5F9157D4F80BB5120D3203F</GUID>
+      <GUID>0608E254BBA946A77DDC28085795707A</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -1097,7 +1111,7 @@ NOTE: This library relies on .NETStandard 2.0 libraries. These are included with
         <Path>Example Code\SQL Examples\Album\Write Title.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>4AF6B198E7195AD56C35CAD83E85432B</GUID>
+      <GUID>3F347A1F3349918102A622E0FD97CBD6</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -1174,7 +1188,7 @@ NOTE: This library relies on .NETStandard 2.0 libraries. These are included with
         <Path>Example Code\SQL Examples\AlbumMap\To LabVIEW.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>748E8814CBD57D90EF4E2050F837E290</GUID>
+      <GUID>A4F4F9F2A8878D19C6A1CF8EC2364BD2</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -1335,7 +1349,7 @@ NOTE: This library relies on .NETStandard 2.0 libraries. These are included with
         <Path>Example Code\SQL Examples\BB Players\Write pNum.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>B0DDF88014023F0B3979DA6CF0303A64</GUID>
+      <GUID>AF30B5259D5A261F82515C6E73543B0A</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -1412,7 +1426,7 @@ NOTE: This library relies on .NETStandard 2.0 libraries. These are included with
         <Path>Example Code\SQL Examples\BB Players Map\To LabVIEW.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>5AECD8E4934F9A7315F0F0C8429160BF</GUID>
+      <GUID>BFDB457C510EC235C1F330615AF627A6</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -1545,7 +1559,7 @@ NOTE: This library relies on .NETStandard 2.0 libraries. These are included with
         <Path>Example Code\SQL Examples\Vehicle\Write Year.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>BBE98C2A59AE9437AD486B9FF734CC4C</GUID>
+      <GUID>FD88BC21A6B08C1CDEE4E8D1CA6ADCCA</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -1622,7 +1636,7 @@ NOTE: This library relies on .NETStandard 2.0 libraries. These are included with
         <Path>Example Code\SQL Examples\VehicleMap\To LabVIEW.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>077A0F98101C3A6A5F4FA64E933B40F2</GUID>
+      <GUID>649E5E265D827AD5B4ABF0353E974365</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -1741,7 +1755,7 @@ NOTE: This library relies on .NETStandard 2.0 libraries. These are included with
         <Path>ORM_API\Advanced\QueryFirst_SQL.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>07854621D69AA8431A4134775134C235</GUID>
+      <GUID>E5EF0761D0B6877616ED25A7D82DE6E4</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -1916,7 +1930,7 @@ NOTE: This library relies on .NETStandard 2.0 libraries. These are included with
         <Path>ORM_API\Utilities\Next.vim</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>F259851593CEC33406FBE80209B66DEA</GUID>
+      <GUID>E5D4CE086E92AF24B6FD0DA762B20E0F</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -2077,7 +2091,7 @@ NOTE: This library relies on .NETStandard 2.0 libraries. These are included with
         <Path>Example Code\SQL Examples\Vehicle\Write Year.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>E4C0C461AA699ED4311E7E2C38F20B60</GUID>
+      <GUID>419F05E421DDD096A589C6D566DC6C75</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
