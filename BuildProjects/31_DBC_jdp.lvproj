@@ -47,6 +47,24 @@
 				<Item Name="ObjectMap.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Viviota/shared/ORM_lib.lvlibp/ObjectMap/ObjectMap.lvclass"/>
 			</Item>
 		</Item>
+		<Item Name="dep_jdp_dlls" Type="Folder">
+			<Item Name="pg_32" Type="Folder">
+				<Item Name="libcrypto-3.dll" Type="Document" URL="/&lt;vilib&gt;/JDP Science/PostgreSQL Library/Connection/lib/win32/libcrypto-3.dll"/>
+				<Item Name="libpq.dll" Type="Document" URL="/&lt;vilib&gt;/JDP Science/PostgreSQL Library/Connection/lib/win32/libpq.dll"/>
+				<Item Name="libssl-3.dll" Type="Document" URL="/&lt;vilib&gt;/JDP Science/PostgreSQL Library/Connection/lib/win32/libssl-3.dll"/>
+			</Item>
+			<Item Name="pg_64" Type="Folder">
+				<Item Name="libcrypto-3-x64.dll" Type="Document" URL="/&lt;vilib&gt;/JDP Science/PostgreSQL Library/Connection/lib/win64/libcrypto-3-x64.dll"/>
+				<Item Name="libpq.dll" Type="Document" URL="/&lt;vilib&gt;/JDP Science/PostgreSQL Library/Connection/lib/win64/libpq.dll"/>
+				<Item Name="libssl-3-x64.dll" Type="Document" URL="/&lt;vilib&gt;/JDP Science/PostgreSQL Library/Connection/lib/win64/libssl-3-x64.dll"/>
+			</Item>
+			<Item Name="sqlite" Type="Folder">
+				<Item Name="extension-functions.dll" Type="Document" URL="/&lt;vilib&gt;/drjdpowell/SQLite Library/SQL Connection/extension-functions.dll"/>
+				<Item Name="extension-functions_64.dll" Type="Document" URL="/&lt;vilib&gt;/drjdpowell/SQLite Library/SQL Connection/extension-functions_64.dll"/>
+				<Item Name="sqlite3.dll" Type="Document" URL="/&lt;vilib&gt;/drjdpowell/SQLite Library/SQL Connection/sqlite3.dll"/>
+				<Item Name="sqlite3_64.dll" Type="Document" URL="/&lt;vilib&gt;/drjdpowell/SQLite Library/SQL Connection/sqlite3_64.dll"/>
+			</Item>
+		</Item>
 		<Item Name="dep_pg" Type="Folder">
 			<Item Name="PQ Support.lvlib" Type="Library" URL="/&lt;vilib&gt;/JDP Science/PostgreSQL Library/Support/PQ Support.lvlib"/>
 			<Item Name="SQLite.lvlib" Type="Library" URL="/&lt;vilib&gt;/drjdpowell/SQLite Library/SQLite.lvlib"/>
@@ -112,7 +130,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x32/shared</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{2F7E8527-00DC-462F-BEA0-6DF7909768B6}</Property>
-				<Property Name="Bld_version.build" Type="Int">3</Property>
+				<Property Name="Bld_version.build" Type="Int">4</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">ORM_pgsql_jdp.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x32/shared/ORM_pgsql_jdp.lvlibp</Property>
@@ -127,12 +145,12 @@
 				<Property Name="Destination[2].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[2].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[3].destName" Type="Str">data_pg</Property>
-				<Property Name="Destination[3].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x32/shared/data_pg</Property>
+				<Property Name="Destination[3].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x32/shared/data_pg/win32</Property>
 				<Property Name="Destination[3].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[3].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="DestinationCount" Type="Int">4</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{778AFCF4-C061-4FC9-AC53-4AF0148C2A43}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{CF753AB4-09AF-4EBB-A225-251E24B2C1CB}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/ORM_pgsql_jdp.lvlib</Property>
@@ -142,28 +160,35 @@
 				<Property Name="Source[1].preventRename" Type="Bool">true</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">Library</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/My Computer/dep_pg/PQ Support.lvlib</Property>
-				<Property Name="Source[2].Library.allowMissingMembers" Type="Bool">true</Property>
-				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[2].type" Type="Str">Library</Property>
-				<Property Name="Source[3].Container.applyDestination" Type="Bool">true</Property>
-				<Property Name="Source[3].Container.depDestIndex" Type="Int">0</Property>
-				<Property Name="Source[3].destinationIndex" Type="Int">2</Property>
-				<Property Name="Source[3].itemID" Type="Ref">/My Computer/dep</Property>
-				<Property Name="Source[3].type" Type="Str">Container</Property>
+				<Property Name="Source[10].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[10].itemID" Type="Ref">/My Computer/dep_pg/PQ Support.lvlib</Property>
+				<Property Name="Source[10].Library.allowMissingMembers" Type="Bool">true</Property>
+				<Property Name="Source[10].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[10].type" Type="Str">Library</Property>
+				<Property Name="Source[2].Container.applyDestination" Type="Bool">true</Property>
+				<Property Name="Source[2].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">2</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/dep</Property>
+				<Property Name="Source[2].type" Type="Str">Container</Property>
+				<Property Name="Source[3].destinationIndex" Type="Int">3</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/My Computer/dep_jdp_dlls/pg_32/libcrypto-3.dll</Property>
 				<Property Name="Source[4].destinationIndex" Type="Int">3</Property>
-				<Property Name="Source[4].itemID" Type="Ref">/My Computer/dep_pg/PQ Support.lvlib/libpq32.lvclass/libcrypto-3.dll</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/My Computer/dep_jdp_dlls/pg_32/libpq.dll</Property>
 				<Property Name="Source[5].destinationIndex" Type="Int">3</Property>
-				<Property Name="Source[5].itemID" Type="Ref">/My Computer/dep_pg/PQ Support.lvlib/libpq32.lvclass/libpq.dll</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/My Computer/dep_jdp_dlls/pg_32/libssl-3.dll</Property>
 				<Property Name="Source[6].destinationIndex" Type="Int">3</Property>
-				<Property Name="Source[6].itemID" Type="Ref">/My Computer/dep_pg/PQ Support.lvlib/libpq32.lvclass/libssl-3.dll</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/My Computer/dep_jdp_dlls/pg_64/libcrypto-3-x64.dll</Property>
 				<Property Name="Source[7].destinationIndex" Type="Int">3</Property>
-				<Property Name="Source[7].itemID" Type="Ref">/My Computer/dep_pg/PQ Support.lvlib/libpq64.lvclass/libcrypto-3-x64.dll</Property>
+				<Property Name="Source[7].itemID" Type="Ref">/My Computer/dep_jdp_dlls/pg_64/libpq.dll</Property>
 				<Property Name="Source[8].destinationIndex" Type="Int">3</Property>
-				<Property Name="Source[8].itemID" Type="Ref">/My Computer/dep_pg/PQ Support.lvlib/libpq64.lvclass/libpq.dll</Property>
-				<Property Name="Source[9].destinationIndex" Type="Int">3</Property>
-				<Property Name="Source[9].itemID" Type="Ref">/My Computer/dep_pg/PQ Support.lvlib/libpq64.lvclass/libssl-3-x64.dll</Property>
-				<Property Name="SourceCount" Type="Int">10</Property>
+				<Property Name="Source[8].itemID" Type="Ref">/My Computer/dep_jdp_dlls/pg_64/libssl-3-x64.dll</Property>
+				<Property Name="Source[9].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[9].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[9].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[9].itemID" Type="Ref">/My Computer/dep_jdp_dlls/pg_32</Property>
+				<Property Name="Source[9].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[9].type" Type="Str">Container</Property>
+				<Property Name="SourceCount" Type="Int">11</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">orm-pg-jdp_x32</Property>
 				<Property Name="TgtF_internalName" Type="Str">orm-pg-jdp_x32</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2026 </Property>
@@ -181,7 +206,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x32/shared/debug</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{A89693CD-114A-4133-B270-10B2C48AF330}</Property>
-				<Property Name="Bld_version.build" Type="Int">3</Property>
+				<Property Name="Bld_version.build" Type="Int">4</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">ORM_pgsql_jdp.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x32/shared/debug/ORM_pgsql_jdp.lvlibp</Property>
@@ -196,12 +221,12 @@
 				<Property Name="Destination[2].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[2].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[3].destName" Type="Str">data_pg</Property>
-				<Property Name="Destination[3].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x32/shared/debug/data_pg</Property>
+				<Property Name="Destination[3].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x32/shared/debug/data_pg/win32</Property>
 				<Property Name="Destination[3].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[3].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="DestinationCount" Type="Int">4</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{778AFCF4-C061-4FC9-AC53-4AF0148C2A43}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{CF753AB4-09AF-4EBB-A225-251E24B2C1CB}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/ORM_pgsql_jdp.lvlib</Property>
@@ -211,6 +236,12 @@
 				<Property Name="Source[1].preventRename" Type="Bool">true</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">Library</Property>
+				<Property Name="Source[10].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[10].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[10].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[10].itemID" Type="Ref">/My Computer/dep_jdp_dlls/pg_32</Property>
+				<Property Name="Source[10].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[10].type" Type="Str">Container</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/My Computer/dep_pg/PQ Support.lvlib</Property>
 				<Property Name="Source[2].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
@@ -221,18 +252,18 @@
 				<Property Name="Source[3].itemID" Type="Ref">/My Computer/dep</Property>
 				<Property Name="Source[3].type" Type="Str">Container</Property>
 				<Property Name="Source[4].destinationIndex" Type="Int">3</Property>
-				<Property Name="Source[4].itemID" Type="Ref">/My Computer/dep_pg/PQ Support.lvlib/libpq32.lvclass/libcrypto-3.dll</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/My Computer/dep_jdp_dlls/pg_32/libcrypto-3.dll</Property>
 				<Property Name="Source[5].destinationIndex" Type="Int">3</Property>
-				<Property Name="Source[5].itemID" Type="Ref">/My Computer/dep_pg/PQ Support.lvlib/libpq32.lvclass/libpq.dll</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/My Computer/dep_jdp_dlls/pg_32/libpq.dll</Property>
 				<Property Name="Source[6].destinationIndex" Type="Int">3</Property>
-				<Property Name="Source[6].itemID" Type="Ref">/My Computer/dep_pg/PQ Support.lvlib/libpq32.lvclass/libssl-3.dll</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/My Computer/dep_jdp_dlls/pg_32/libssl-3.dll</Property>
 				<Property Name="Source[7].destinationIndex" Type="Int">3</Property>
-				<Property Name="Source[7].itemID" Type="Ref">/My Computer/dep_pg/PQ Support.lvlib/libpq64.lvclass/libcrypto-3-x64.dll</Property>
+				<Property Name="Source[7].itemID" Type="Ref">/My Computer/dep_jdp_dlls/pg_64/libcrypto-3-x64.dll</Property>
 				<Property Name="Source[8].destinationIndex" Type="Int">3</Property>
-				<Property Name="Source[8].itemID" Type="Ref">/My Computer/dep_pg/PQ Support.lvlib/libpq64.lvclass/libpq.dll</Property>
+				<Property Name="Source[8].itemID" Type="Ref">/My Computer/dep_jdp_dlls/pg_64/libpq.dll</Property>
 				<Property Name="Source[9].destinationIndex" Type="Int">3</Property>
-				<Property Name="Source[9].itemID" Type="Ref">/My Computer/dep_pg/PQ Support.lvlib/libpq64.lvclass/libssl-3-x64.dll</Property>
-				<Property Name="SourceCount" Type="Int">10</Property>
+				<Property Name="Source[9].itemID" Type="Ref">/My Computer/dep_jdp_dlls/pg_64/libssl-3-x64.dll</Property>
+				<Property Name="SourceCount" Type="Int">11</Property>
 				<Property Name="TgtF_enableDebugging" Type="Bool">true</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">orm-pg-jdp_x32</Property>
 				<Property Name="TgtF_internalName" Type="Str">orm-pg-jdp_x32</Property>
@@ -251,7 +282,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x64/shared</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{B3A2484F-904A-4E6C-AEF5-D7D80B7888E7}</Property>
-				<Property Name="Bld_version.build" Type="Int">5</Property>
+				<Property Name="Bld_version.build" Type="Int">6</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">ORM_pgsql_jdp.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x64/shared/ORM_pgsql_jdp.lvlibp</Property>
@@ -266,14 +297,14 @@
 				<Property Name="Destination[2].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[2].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[3].destName" Type="Str">dep_pg</Property>
-				<Property Name="Destination[3].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x64/shared/data_pg</Property>
+				<Property Name="Destination[3].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x64/shared/data_pg/win64</Property>
 				<Property Name="Destination[3].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[3].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="DestinationCount" Type="Int">4</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
 				<Property Name="Source[0].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[0].Container.depDestIndex" Type="Int">3</Property>
-				<Property Name="Source[0].itemID" Type="Str">{718DFDCE-539B-43A3-9EBE-FE222FE772B7}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{CF753AB4-09AF-4EBB-A225-251E24B2C1CB}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/ORM_pgsql_jdp.lvlib</Property>
@@ -283,24 +314,35 @@
 				<Property Name="Source[1].preventRename" Type="Bool">true</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">Library</Property>
+				<Property Name="Source[10].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[10].itemID" Type="Ref">/My Computer/dep_pg/PQ Support.lvlib</Property>
+				<Property Name="Source[10].Library.allowMissingMembers" Type="Bool">true</Property>
+				<Property Name="Source[10].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[10].type" Type="Str">Library</Property>
 				<Property Name="Source[2].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[2].Container.depDestIndex" Type="Int">0</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">2</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/My Computer/dep</Property>
 				<Property Name="Source[2].type" Type="Str">Container</Property>
 				<Property Name="Source[3].destinationIndex" Type="Int">3</Property>
-				<Property Name="Source[3].itemID" Type="Ref">/My Computer/dep_pg/PQ Support.lvlib/libpq32.lvclass/libcrypto-3.dll</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/My Computer/dep_jdp_dlls/pg_32/libcrypto-3.dll</Property>
 				<Property Name="Source[4].destinationIndex" Type="Int">3</Property>
-				<Property Name="Source[4].itemID" Type="Ref">/My Computer/dep_pg/PQ Support.lvlib/libpq32.lvclass/libpq.dll</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/My Computer/dep_jdp_dlls/pg_32/libpq.dll</Property>
 				<Property Name="Source[5].destinationIndex" Type="Int">3</Property>
-				<Property Name="Source[5].itemID" Type="Ref">/My Computer/dep_pg/PQ Support.lvlib/libpq32.lvclass/libssl-3.dll</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/My Computer/dep_jdp_dlls/pg_32/libssl-3.dll</Property>
 				<Property Name="Source[6].destinationIndex" Type="Int">3</Property>
-				<Property Name="Source[6].itemID" Type="Ref">/My Computer/dep_pg/PQ Support.lvlib/libpq64.lvclass/libcrypto-3-x64.dll</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/My Computer/dep_jdp_dlls/pg_64/libcrypto-3-x64.dll</Property>
 				<Property Name="Source[7].destinationIndex" Type="Int">3</Property>
-				<Property Name="Source[7].itemID" Type="Ref">/My Computer/dep_pg/PQ Support.lvlib/libpq64.lvclass/libpq.dll</Property>
+				<Property Name="Source[7].itemID" Type="Ref">/My Computer/dep_jdp_dlls/pg_64/libpq.dll</Property>
 				<Property Name="Source[8].destinationIndex" Type="Int">3</Property>
-				<Property Name="Source[8].itemID" Type="Ref">/My Computer/dep_pg/PQ Support.lvlib/libpq64.lvclass/libssl-3-x64.dll</Property>
-				<Property Name="SourceCount" Type="Int">9</Property>
+				<Property Name="Source[8].itemID" Type="Ref">/My Computer/dep_jdp_dlls/pg_64/libssl-3-x64.dll</Property>
+				<Property Name="Source[9].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[9].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[9].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[9].itemID" Type="Ref">/My Computer/dep_jdp_dlls/pg_64</Property>
+				<Property Name="Source[9].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[9].type" Type="Str">Container</Property>
+				<Property Name="SourceCount" Type="Int">11</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">orm-pg-jdp_x64</Property>
 				<Property Name="TgtF_internalName" Type="Str">orm-pg-jdp_x64</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2026 </Property>
@@ -318,7 +360,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x64/shared/debug</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{57A188F6-7FDB-403F-9A12-A708417125AF}</Property>
-				<Property Name="Bld_version.build" Type="Int">5</Property>
+				<Property Name="Bld_version.build" Type="Int">6</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">ORM_pgsql_jdp.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x64/shared/debug/ORM_pgsql_jdp.lvlibp</Property>
@@ -333,12 +375,12 @@
 				<Property Name="Destination[2].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[2].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[3].destName" Type="Str">dep_pg</Property>
-				<Property Name="Destination[3].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x64/shared/debug/data_pg</Property>
+				<Property Name="Destination[3].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x64/shared/debug/data_pg/win64</Property>
 				<Property Name="Destination[3].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[3].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="DestinationCount" Type="Int">4</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{718DFDCE-539B-43A3-9EBE-FE222FE772B7}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{CF753AB4-09AF-4EBB-A225-251E24B2C1CB}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/ORM_pgsql_jdp.lvlib</Property>
@@ -348,6 +390,12 @@
 				<Property Name="Source[1].preventRename" Type="Bool">true</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">Library</Property>
+				<Property Name="Source[10].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[10].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[10].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[10].itemID" Type="Ref">/My Computer/dep_jdp_dlls/pg_64</Property>
+				<Property Name="Source[10].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[10].type" Type="Str">Container</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/My Computer/dep_pg/PQ Support.lvlib</Property>
 				<Property Name="Source[2].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
@@ -358,18 +406,18 @@
 				<Property Name="Source[3].itemID" Type="Ref">/My Computer/dep</Property>
 				<Property Name="Source[3].type" Type="Str">Container</Property>
 				<Property Name="Source[4].destinationIndex" Type="Int">3</Property>
-				<Property Name="Source[4].itemID" Type="Ref">/My Computer/dep_pg/PQ Support.lvlib/libpq32.lvclass/libcrypto-3.dll</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/My Computer/dep_jdp_dlls/pg_32/libcrypto-3.dll</Property>
 				<Property Name="Source[5].destinationIndex" Type="Int">3</Property>
-				<Property Name="Source[5].itemID" Type="Ref">/My Computer/dep_pg/PQ Support.lvlib/libpq32.lvclass/libpq.dll</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/My Computer/dep_jdp_dlls/pg_32/libpq.dll</Property>
 				<Property Name="Source[6].destinationIndex" Type="Int">3</Property>
-				<Property Name="Source[6].itemID" Type="Ref">/My Computer/dep_pg/PQ Support.lvlib/libpq32.lvclass/libssl-3.dll</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/My Computer/dep_jdp_dlls/pg_32/libssl-3.dll</Property>
 				<Property Name="Source[7].destinationIndex" Type="Int">3</Property>
-				<Property Name="Source[7].itemID" Type="Ref">/My Computer/dep_pg/PQ Support.lvlib/libpq64.lvclass/libcrypto-3-x64.dll</Property>
+				<Property Name="Source[7].itemID" Type="Ref">/My Computer/dep_jdp_dlls/pg_64/libcrypto-3-x64.dll</Property>
 				<Property Name="Source[8].destinationIndex" Type="Int">3</Property>
-				<Property Name="Source[8].itemID" Type="Ref">/My Computer/dep_pg/PQ Support.lvlib/libpq64.lvclass/libpq.dll</Property>
+				<Property Name="Source[8].itemID" Type="Ref">/My Computer/dep_jdp_dlls/pg_64/libpq.dll</Property>
 				<Property Name="Source[9].destinationIndex" Type="Int">3</Property>
-				<Property Name="Source[9].itemID" Type="Ref">/My Computer/dep_pg/PQ Support.lvlib/libpq64.lvclass/libssl-3-x64.dll</Property>
-				<Property Name="SourceCount" Type="Int">10</Property>
+				<Property Name="Source[9].itemID" Type="Ref">/My Computer/dep_jdp_dlls/pg_64/libssl-3-x64.dll</Property>
+				<Property Name="SourceCount" Type="Int">11</Property>
 				<Property Name="TgtF_enableDebugging" Type="Bool">true</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">orm-pg-jdp_x64</Property>
 				<Property Name="TgtF_internalName" Type="Str">orm-pg-jdp_x64</Property>
@@ -388,7 +436,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x32/shared</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{FC06C632-CBA2-4AF6-B051-FADFD7DB2488}</Property>
-				<Property Name="Bld_version.build" Type="Int">2</Property>
+				<Property Name="Bld_version.build" Type="Int">3</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">ORM_sqlite_jdp.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x32/shared/ORM_sqlite_jdp.lvlibp</Property>
@@ -404,7 +452,7 @@
 				<Property Name="Destination[2].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{778AFCF4-C061-4FC9-AC53-4AF0148C2A43}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{CF753AB4-09AF-4EBB-A225-251E24B2C1CB}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/ORM_pgsql_jdp.lvlib</Property>
@@ -428,7 +476,13 @@
 				<Property Name="Source[4].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[4].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[4].type" Type="Str">Library</Property>
-				<Property Name="SourceCount" Type="Int">5</Property>
+				<Property Name="Source[5].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[5].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[5].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/My Computer/dep_jdp_dlls/sqlite</Property>
+				<Property Name="Source[5].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[5].type" Type="Str">Container</Property>
+				<Property Name="SourceCount" Type="Int">6</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">orm-sqlite-jdp_x32</Property>
 				<Property Name="TgtF_internalName" Type="Str">orm-sqlite-jdp_x32</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2026 </Property>
@@ -446,7 +500,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x32/shared/debug</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{023BE28F-1B13-4FFD-BA4B-34B68C7BBD4F}</Property>
-				<Property Name="Bld_version.build" Type="Int">2</Property>
+				<Property Name="Bld_version.build" Type="Int">3</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">ORM_sqlite_jdp.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x32/shared/debug/ORM_sqlite_jdp.lvlibp</Property>
@@ -462,7 +516,7 @@
 				<Property Name="Destination[2].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{778AFCF4-C061-4FC9-AC53-4AF0148C2A43}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{CF753AB4-09AF-4EBB-A225-251E24B2C1CB}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/ORM_pgsql_jdp.lvlib</Property>
@@ -481,7 +535,18 @@
 				<Property Name="Source[3].preventRename" Type="Bool">true</Property>
 				<Property Name="Source[3].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[3].type" Type="Str">Library</Property>
-				<Property Name="SourceCount" Type="Int">4</Property>
+				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/My Computer/dep_pg/SQLite.lvlib</Property>
+				<Property Name="Source[4].Library.allowMissingMembers" Type="Bool">true</Property>
+				<Property Name="Source[4].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[4].type" Type="Str">Library</Property>
+				<Property Name="Source[5].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[5].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[5].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/My Computer/dep_jdp_dlls/sqlite</Property>
+				<Property Name="Source[5].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[5].type" Type="Str">Container</Property>
+				<Property Name="SourceCount" Type="Int">6</Property>
 				<Property Name="TgtF_enableDebugging" Type="Bool">true</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">orm-sqlite-jdp_x32</Property>
 				<Property Name="TgtF_internalName" Type="Str">orm-sqlite-jdp_x32</Property>
@@ -500,7 +565,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x64/shared</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{ADD417FC-36ED-476C-9F73-181B19357C8F}</Property>
-				<Property Name="Bld_version.build" Type="Int">5</Property>
+				<Property Name="Bld_version.build" Type="Int">6</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">ORM_sqlite_jdp.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x64/shared/ORM_sqlite_jdp.lvlibp</Property>
@@ -516,7 +581,7 @@
 				<Property Name="Destination[2].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{718DFDCE-539B-43A3-9EBE-FE222FE772B7}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{CF753AB4-09AF-4EBB-A225-251E24B2C1CB}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/ORM_pgsql_jdp.lvlib</Property>
@@ -535,7 +600,18 @@
 				<Property Name="Source[3].preventRename" Type="Bool">true</Property>
 				<Property Name="Source[3].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[3].type" Type="Str">Library</Property>
-				<Property Name="SourceCount" Type="Int">4</Property>
+				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/My Computer/dep_pg/SQLite.lvlib</Property>
+				<Property Name="Source[4].Library.allowMissingMembers" Type="Bool">true</Property>
+				<Property Name="Source[4].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[4].type" Type="Str">Library</Property>
+				<Property Name="Source[5].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[5].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[5].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/My Computer/dep_jdp_dlls/sqlite</Property>
+				<Property Name="Source[5].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[5].type" Type="Str">Container</Property>
+				<Property Name="SourceCount" Type="Int">6</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">orm-sqlite-jdp_x64</Property>
 				<Property Name="TgtF_internalName" Type="Str">orm-sqlite-jdp_x64</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2026 </Property>
@@ -553,7 +629,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x64/shared/debug</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{772E971C-6801-4CB5-8A04-14D0D1968540}</Property>
-				<Property Name="Bld_version.build" Type="Int">5</Property>
+				<Property Name="Bld_version.build" Type="Int">6</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">ORM_sqlite_jdp.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/Viviota/Builds/LabVIEW/LabVIEW_ORM_x64/shared/debug/ORM_sqlite_jdp.lvlibp</Property>
@@ -569,7 +645,7 @@
 				<Property Name="Destination[2].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{718DFDCE-539B-43A3-9EBE-FE222FE772B7}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{CF753AB4-09AF-4EBB-A225-251E24B2C1CB}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/ORM_pgsql_jdp.lvlib</Property>
@@ -588,7 +664,18 @@
 				<Property Name="Source[3].preventRename" Type="Bool">true</Property>
 				<Property Name="Source[3].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[3].type" Type="Str">Library</Property>
-				<Property Name="SourceCount" Type="Int">4</Property>
+				<Property Name="Source[4].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[4].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/My Computer/dep_jdp_dlls/sqlite</Property>
+				<Property Name="Source[4].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[4].type" Type="Str">Container</Property>
+				<Property Name="Source[5].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/My Computer/dep_pg/SQLite.lvlib</Property>
+				<Property Name="Source[5].Library.allowMissingMembers" Type="Bool">true</Property>
+				<Property Name="Source[5].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[5].type" Type="Str">Library</Property>
+				<Property Name="SourceCount" Type="Int">6</Property>
 				<Property Name="TgtF_enableDebugging" Type="Bool">true</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">orm-sqlite-jdp_x64</Property>
 				<Property Name="TgtF_internalName" Type="Str">orm-sqlite-jdp_x64</Property>
