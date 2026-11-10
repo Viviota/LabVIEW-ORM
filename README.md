@@ -30,13 +30,47 @@ The .NET interface used is NetStandard2.0 and the following packages are used:
 - Microsoft SQL Server : System.Data.SqlConnection (built-in)
 - SQLite : System.Data.SQLite: v2.0.3
 - MySQL : MySqlConnector: v2.6.1
-- kdb+ : KpNet
+- kdb+ : KpNet (no longer maintained)
+- ODBC : (built-in)
 
 A Dapper Interface is also included, however that is not actively developed/supported/tested.
 
 Binary Dependencies are not currently included in the repository, but are included in the VIPM package, and included as an artifact in releases
 
 The common dependencies for the .NETStandard libraries can be found [here](https://github.com/Viviota/LabVIEW-Viviota-NS2-Common).
+
+## .NET Core support
+Support has been added for .NET Core support.  These projects were developed in LabVIEW 2026 SP1, and support is only for that and future versions.
+This *should* also be cross-compatible for LINUX OS, but that has not been tested.
+Currently this support is for .NET Core 8.0
+
+.NET Core supports the following databases:
+
+(Updated 2026.11.05)
+- PostgreSQL : npgsql v9.0.5 
+  - NOTE: this is limited due to new versions dependencies on newer versions of built-in dependencies which are incompatible
+- Microsoft SQL Server : System.Data.SqlClient v4.9.1
+  - NOTE: this library is technically deprecated, but is used because it is self-contained.  This version was released earlier this year.  The newer (preferred version is Microsoft.Data.SqlClient v7.1.0
+  - This has a runtime dll associated with it that's included for additional OS's
+- SQLite : Microsoft.Data.Sqlite v10.0.11
+  - See the readme in the libraries_netcore folder for additional information about these dependencies.
+  - This has a runtime dll associated with it that's included for additional OS's
+- MySQL : MySQLConnector v2.6.2 - Untested
+- ODBC : System.Data.Odbc v10.2.12 - Untested
+
+These additional plugins may be migrated to a different project, but are currently maintained here.  BUT the ppls are ONLY compatible with LV2026 64-bit + right now.
+
+## dll (JDP) support
+Support has also been added to more direct dll support for PostgreSQL and SQLite through the libraries:
+- JDP Science PostgreSQL Library
+- JDP Science SQLite Library
+
+However, both libraries required modification.  The modified versions of the libraries are maintained in the \libraries\ folder.
+To work on this project, install the current library versions through VIPM, and then override them with the current versions from those folders.
+
+These "direct" plugins should be compatible with Linux OS as well, but have NOT been tested/verified, and the .so files required are also not located here.
+
+These files are currently mainted for LV 2020 32 & 64-bit.
 
 ## .config files
 The NetStandard2.0 dependency means that in some cases a .config XML file is required for development/deployment to make sure that dependencies are loaded correctly.
