@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2026-11-05 16:59:56" Modified_Date="2026-11-09 17:58:44" Creator="Administrator" Comments="" ID="20c6a10788044cd35e53e6f419400ae3">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2026-11-05 16:59:56" Modified_Date="2026-11-17 10:36:16" Creator="Administrator" Comments="" ID="047d06894e6387732da5dc259d64cada">
   <Library_General_Settings>
     <Package_File_Name>Viviota_lib_ORM_Direct_Connections</Package_File_Name>
-    <Library_Version>1.0.0.9</Library_Version>
+    <Library_Version>1.0.1.10</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..\..\..\..\Builds\VIPM\LabVIEW_ORM</Library_Output_Folder>
@@ -345,7 +345,7 @@ NOTE: This library is provided in a compiled format utilyzing PPLs, a set of the
         <Path>DirectConnections\API\constant_jdp_sqlite.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>8C198D2DE253639A52D38CD5D57176BB</GUID>
+      <GUID>4CF0356C15ECC054C746A8F2B9F30CBA</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
